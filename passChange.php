@@ -65,8 +65,8 @@
 		if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			
 			include 'KonekcijaSaBazom.php';
-        	$tabela=new KonekcijaSaBazom();
-						
+			$tabela = KonekcijaSaBazom::getInstance();
+									
             $id = $_POST['id'];
 			$staraSifra = $_POST['staraSifra'];
 			$novaSifra = $_POST['novaSifra'];

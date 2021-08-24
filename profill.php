@@ -1,15 +1,15 @@
 <?php 
 	session_start();
-	/*
+	
 	if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
-		header("location: logovanje/logIN.php");
+		header("location: logIN.php");
 		exit;
-	}*/
+	}
 	
 	// da se promeni lokacija za tabela studenti
 	include 'KonekcijaSaBazom.php';
-	$tabela = new KonekcijaSaBazom();
-		
+  $tabela = KonekcijaSaBazom::getInstance();		
+  
 	$id = $_SESSION['idKorisnika'];
 	$tipKorisnika = $_SESSION["tipKorisnika"];
     $imePrezime = $_SESSION["podaciKorisnika"];

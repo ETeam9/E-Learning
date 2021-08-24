@@ -4,7 +4,8 @@
 ?>
 <?php
 	include 'KonekcijaSaBazom.php';
-	$tabela = new KonekcijaSaBazom();
+  $tabela = KonekcijaSaBazom::getInstance();
+  
     $email=$_SESSION['idKorisnika'];
     $korisnik=$_SESSION['tipKorisnika'];
     $kurs=$_SESSION['kurs'];

@@ -3,7 +3,7 @@
     session_start();
 
         include './KonekcijaSaBazom.php';
-    $tabela = new KonekcijaSaBazom();
+        $tabela = KonekcijaSaBazom::getInstance();
 ?>
 <?php
     $email=$_SESSION['idKorisnika'];

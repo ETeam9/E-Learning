@@ -10,7 +10,7 @@
         exit();
     }
     include 'KonekcijaSaBazom.php';
-    $tabela = new KonekcijaSaBazom();
+    $tabela = KonekcijaSaBazom::getInstance();
 ?>
 
 <html lang="sr-latin">

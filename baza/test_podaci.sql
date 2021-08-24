@@ -4,7 +4,7 @@
 -- Dumping data for table `nastavnik`
 --
 
-INSERT INTO `nastavnik` (`email_nastavnik`, `sifra_nastavnik`, `fotografija`, `ime_nastavnik`, `prezime_nastavnik`) VALUES
+INSERT INTO `nastavnik` (`email_nastavnik`, `sifra_nastavnik`, `forografija`, `ime_nastavnik`, `prezime_nastavnik`) VALUES
 ('i@m', '1', '', 'Ivan', 'Macuzic'),
 ('p@p', '1', '', 'Petar', 'Petrovic'),
 ('v@d', '1', '', 'Vladimir', 'Dunic'),
@@ -47,3 +47,12 @@ INSERT INTO `administrator` (`email_admin`, `sifra_admin`, `ime_admin`) VALUES
 ('a@a', '1', 'Admin');
 
 --
+
+INSERT INTO `fajl` (`id`, `naziv`, `lokacija`, `tip_fajla`, `sifra_kursa`, `id_sekcije`, `redni_broj`, `vidljivost`) VALUES
+(32, 'mn-1.txt', 'fajlovi/60b685f1581705.43042938.txt', 'txt', 'primer', 0, 0, 0),
+(33, 'mn2-1.txt', 'fajlovi/60b6861db404b1.06473321.txt', 'txt', 'primer', 1, 0, 0),
+(34, 'mn2-2.txt', 'fajlovi/60b6861dccec06.97360461.txt', 'txt', 'primer', 1, 1, 0),
+(39, 'mn9-1.txt', 'fajlovi/60b687ce3f7fd0.95245803.txt', 'txt', 'primer', 8, 0, 0),
+(40, 'mn10-1.txt', 'fajlovi/60b687ce58a5b7.50437130.txt', 'txt', 'primer', 9, 0, 0),
+(41, 'mn10-2.txt', 'fajlovi/60b687ce8b2ff1.80547642.txt', 'txt', 'primer', 9, 1, 0),
+(42, 'mn10-3.txt', 'fajlovi/60b687ce9bca33.40341027.txt', 'txt', 'primer', 9, 2, 0);

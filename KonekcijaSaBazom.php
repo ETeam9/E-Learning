@@ -2,9 +2,10 @@
 	Class KonekcijaSaBazom{
 		private $conn;
 		private $n;
+		private static $instance = null;
 		
 		//Konstruktor
-		function __construct() {
+		private function __construct() {
             $servername = "localhost";
 			$username = "root";
 			$password = "";
@@ -20,6 +21,15 @@
         }
 		function __destruct() {
 			$this->conn->close();
+		}
+		public static function getInstance()
+		{
+		  if (self::$instance == null)
+		  {
+			self::$instance = new KonekcijaSaBazom();
+		  }
+	   
+		  return self::$instance;
 		}
 
 /* .......................funkcije za logovanje ..................................................... */

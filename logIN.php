@@ -8,7 +8,7 @@
 		}*/
 		
 		include 'KonekcijaSaBazom.php';
-        $tabela=new KonekcijaSaBazom();
+        $tabela = KonekcijaSaBazom::getInstance();
 		$passErr = "0";
 		$userErr = "0";
 		$user = "";

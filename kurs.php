@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <?php
     session_start();
+
+    //
+    if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+		header("location: logIN.php");
+		exit;
+	}
+
     if (isset($_GET['pocetna_kurs'])) {
     $_SESSION['kurs'] =  $_GET['pocetna_kurs'];
     }
 
     include './KonekcijaSaBazom.php';
-    $tabela = new KonekcijaSaBazom();
+    $tabela = KonekcijaSaBazom::getInstance();
 ?>
 <html lang="sr-latin">
 <head>

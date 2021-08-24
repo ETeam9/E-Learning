@@ -1,3 +1,11 @@
+<?php 
+	session_start();
+	
+	if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+		header("location: ../../logIN.php");
+		exit;
+	}
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -70,7 +78,7 @@
 		}
 		if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			include '../../KonekcijaSaBazom.php';
-	        $tabela = new KonekcijaSaBazom();
+	        $tabela = KonekcijaSaBazom::getInstance();
             $ID = $_POST['idToDelete'];
 			$test = false;
 			

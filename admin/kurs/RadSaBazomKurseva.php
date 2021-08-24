@@ -356,7 +356,7 @@ table.table .avatar {
 
 <?php 
 	include '../../KonekcijaSaBazom.php';
-	$tabela = new KonekcijaSaBazom();
+	$tabela = KonekcijaSaBazom::getInstance();
 
 	$tempPage = 1;
 	$studentInput = "";
