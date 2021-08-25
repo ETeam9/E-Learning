@@ -22,7 +22,7 @@ INSERT INTO `student` (`email_student`, `sifra_student`, `indeks`, `upis`, `foto
 ('da@da', '1', 606, 2017, '', 'Nemanja', 'Nakic', 4),
 ('j.jovanovic@gmail.com', '1', 604, 2017, '', 'Jovan', 'Jovanović', 4),
 ('p.petrovic@gmail.com', '1', 602, 2017, '', 'Petar', 'Petrović', 4),
-('p@p', '1', 699, 2017, '', 'Petar', 'Petrovic', 4);
+('ps@p', '1', 699, 2017, '', 'Petar', 'Petrovic', 4);
 
 -- --------------------------------------------------------
 --

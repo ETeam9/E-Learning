@@ -635,14 +635,14 @@ while($row = $result->fetch_assoc())
 </div>
 </div>
 
-<!-- Edit Modal HTML -->
+<!-- Edit Modal HTML / prikaz studenata kod profesora  -->
 <div id="addEmployeeModal" class="modal fade">
 			<div class="modal-dialog">
 				<div class="modal-content">
                     <div class="table-wrapper-scroll-y my-custom-scrollbar">
 
                         <div class="modal-header">						
-							<h4 class="modal-title">Dodaj kurs</h4>
+							<h4 class="modal-title"> Prikaz studenata:</h4>
 							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 						</div>
 
