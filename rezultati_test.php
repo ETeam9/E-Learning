@@ -301,7 +301,7 @@
 						</thead>
 						<tbody>
           <?php
-            $result= $mysqli->query("SELECT * FROM student INNER JOIN prati ON student.email_student=prati.email_student WHERE student.godina=$kursgdn AND prati.sifra_kursa='$kurs' ORDER BY student.upis ASC, student.indeks ASC") or die($mysqli->error);
+            $result= $mysqli->query("SELECT * FROM student INNER JOIN prati ON student.email_student=prati.email_student WHERE prati.sifra_kursa='$kurs' ORDER BY student.upis ASC, student.indeks ASC") or die($mysqli->error);
             while($row = $result->fetch_assoc()):
               $emailstud=$row['email_student'];
           ?>
